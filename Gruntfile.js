@@ -5,20 +5,11 @@ prompt.start()
 var modPath = '../../server_mods/com.wondible.pa.wreckage/'
 var stream = 'stable'
 var media = require('./lib/path').media(stream)
-var build = 'ui/main/shared/js/build.js'
 
 module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     copy: {
-      build: {
-        files: [
-          {
-            src: media + build,
-            dest: build,
-          },
-        ],
-      },
       mod: {
         files: [
           {
