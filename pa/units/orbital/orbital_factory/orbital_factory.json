@@ -30,6 +30,7 @@
     "UNITTYPE_Orbital",
     "UNITTYPE_FabOrbBuild",
     "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
     "UNITTYPE_Important"
   ],
   "command_caps": [
