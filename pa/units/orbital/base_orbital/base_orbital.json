@@ -12,7 +12,7 @@
   "planetary_arrival_cooldown_time": 3,
   "wreckage_health_frac": 2,
   "armor_type": "AT_Orbital",
-  "guard_radius": 50,
+  "guard_radius": 100,
   "unit_types": [
     "UNITTYPE_Mobile",
     "UNITTYPE_Orbital",
