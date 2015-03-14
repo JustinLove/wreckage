@@ -1,14 +1,14 @@
 {
   "author": "wondible",
-  "build": "77443",
+  "build": "79317",
   "category": ["metal", "reclaim"],
   "context": "server",
-  "date": "2015/01/29",
+  "date": "2015/03/13",
   "description": "All units leave wreckage.",
   "display_name": "Wreckage",
   "forum": "https://forums.uberent.com/threads/rel-server-wreckage.65404/",
   "identifier": "com.wondible.pa.wreckage",
   "signature": "not yet implemented",
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
 

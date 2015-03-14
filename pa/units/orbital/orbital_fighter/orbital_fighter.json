@@ -56,7 +56,7 @@
           "layer": "orbital",
           "channel": "sight",
           "shape": "sphere",
-          "radius": 250
+          "radius": 400
         }
       ]
     }
