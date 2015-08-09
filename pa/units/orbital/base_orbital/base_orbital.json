@@ -140,6 +140,9 @@
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/orbital/orbital"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   },
   "events": {

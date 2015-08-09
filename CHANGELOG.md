@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Update for +sing, and some allow underground flags I missed
+
 ## 1.0.4
 
 - Unit updates for 79317

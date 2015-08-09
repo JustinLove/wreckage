@@ -80,6 +80,9 @@
     },
     "selection_response": {
       "cue": "/SE/Selection/bot/T2_fab"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   },
   "death": {

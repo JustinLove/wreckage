@@ -62,6 +62,9 @@
     },
     "selection_response": {
       "cue": "/SE/Selection/sea/sea"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   }
 }

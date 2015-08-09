@@ -84,6 +84,9 @@
     },
     "selection_response": {
       "cue": "/SE/Selection/air/air"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   }
 }

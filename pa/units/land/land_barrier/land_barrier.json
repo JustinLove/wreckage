@@ -36,8 +36,7 @@
     "air_friction": 1,
     "allow_pushing": false,
     "push_sideways": false,
-    "allow_underground": false,
-    "ignore_collisions": false
+    "allow_underground": false
   },
   "recon": {
     "observer": {

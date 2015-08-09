@@ -21,8 +21,7 @@
     "air_friction": 1,
     "allow_pushing": false,
     "push_sideways": false,
-    "allow_underground": false,
-    "ignore_collisions": false
+    "allow_underground": false
   },
   "recon": {
     "observable": {
@@ -64,6 +63,9 @@
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/structure_small"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   },
   "death": {

@@ -115,8 +115,7 @@
     "air_friction": 1,
     "allow_pushing": false,
     "push_sideways": false,
-    "allow_underground": false,
-    "ignore_collisions": false
+    "allow_underground": false
   },
   "recon": {
     "observable": {
@@ -150,6 +149,9 @@
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/orbital/orbital"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   },
   "TEMP_texelinfo": 1

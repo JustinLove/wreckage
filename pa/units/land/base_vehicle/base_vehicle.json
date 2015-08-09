@@ -79,6 +79,9 @@
     },
     "selection_response": {
       "cue": "/SE/Selection/veh/veh"
+    },
+    "sing_selection_response": {
+      "cue": "/SE/UI/plus/sing"
     }
   },
   "death": {
