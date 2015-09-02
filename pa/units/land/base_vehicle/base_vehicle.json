@@ -20,6 +20,12 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
+  "wreckage": {
+    "collision": [
+      "none"
+    ],
+    "remove_ground_cost_stamp": true
+  },
   "navigation": {
     "type": "land-small",
     "acceleration": 1,
@@ -29,11 +35,28 @@
     "dodge_radius": 15,
     "dodge_multiplier": 1,
     "wobble_factor": 0.1,
-    "wobble_speed": 0.2
+    "wobble_speed": 0.2,
+    "park_stamp": {
+      "shape": "sphere",
+      "cost": 10,
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        }
+      ]
+    }
   },
   "physics": {
     "radius": 1,
-    "push_class": 2,
     "air_friction": 1
   },
   "recon": {
@@ -65,6 +88,10 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot.pfx"
+    },
+    "teleported": {
+      "audio_cue": "/SE/Death/Veh",
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     }
   },
@@ -79,9 +106,6 @@
     },
     "selection_response": {
       "cue": "/SE/Selection/veh/veh"
-    },
-    "sing_selection_response": {
-      "cue": "/SE/UI/plus/sing"
     }
   },
   "death": {

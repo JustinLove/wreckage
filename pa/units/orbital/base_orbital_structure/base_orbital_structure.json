@@ -111,7 +111,6 @@
     "shape": "Box",
     "collision_layers": "WL_Orbital",
     "radius": 1,
-    "push_class": 255,
     "air_friction": 1,
     "allow_pushing": false,
     "push_sideways": false,
@@ -142,8 +141,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",
-      "effect_spec": "/pa/effects/specs/default_orbital_explosion.pfx",
-      "effect_scale": 2
+      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx",
+      "effect_scale": 1
     }
   },
   "audio": {
@@ -154,5 +153,13 @@
       "cue": "/SE/UI/plus/sing"
     }
   },
-  "TEMP_texelinfo": 1
+  "selection_icon": {
+    "vertical_offset": 0
+  },
+  "wreckage": {
+    "collision": [
+      "none"
+    ],
+    "remove_ground_cost_stamp": true
+  }
 }

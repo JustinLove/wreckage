@@ -1,6 +1,8 @@
 # Wreckage
 
-All units leave wreckage.
+All units leave more valuable wrecks. Mobile units do not affect collision/pathing (except ground titans)
+
+Nanoswarm damage has been nerfed (increasing wreckage makes things more vulnerable to metal damage)
 
 ## Development
 

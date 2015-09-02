@@ -1,12 +1,11 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "display_name": "!LOC(units:wall.message):Wall",
-  "description": "!LOC(units:basic_defense_no_weapon_high_health.message):Basic defense- No weapon, high health.",
-  "max_health": 3000,
+  "display_name": "!LOC:Wall",
+  "description": "!LOC:Very durable. Blocks units and protects from incoming fire.",
+  "max_health": 2000,
   "build_metal_cost": 50,
   "atrophy_rate": 20,
   "atrophy_cool_down": 0.5,
-  "wreckage_health_frac": 2,
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "mesh_bounds": [
     5,
@@ -32,7 +31,6 @@
     "shape": "Box",
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "radius": 1,
-    "push_class": 255,
     "air_friction": 1,
     "allow_pushing": false,
     "push_sideways": false,
@@ -46,6 +44,41 @@
           "channel": "sight",
           "shape": "capsule",
           "radius": 1
+        }
+      ]
+    }
+  },
+  "structure": {
+    "cost_stamp": {
+      "shape": "box",
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "amphibious-large",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover-large",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "deepwater",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "underwater",
+          "stamp_type": "wall"
         }
       ]
     }
@@ -91,6 +124,9 @@
       "effect_spec": "/pa/effects/specs/default_explosion.pfx",
       "effect_scale": 1.25
     }
+  },
+  "selection_icon": {
+    "diameter": 6
   },
   "TEMP_texelinfo": 7.58193
 }

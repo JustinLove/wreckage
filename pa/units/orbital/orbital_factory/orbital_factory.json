@@ -1,12 +1,11 @@
 {
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-  "display_name": "!LOC(units:orbital_factory.message):Orbital Factory",
-  "description": "!LOC(units:advanced_manufacturing_builds_orbital_satellites.message):Advanced manufacturing- Builds orbital satellites.",
+  "display_name": "!LOC:Orbital Factory",
+  "description": "!LOC:Advanced manufacturing- Builds orbital satellites.",
   "max_health": 9000,
-  "build_metal_cost": 5400,
+  "build_metal_cost": 3600,
   "atrophy_rate": 90,
   "atrophy_cool_down": 15,
-  "wreckage_health_frac": 2,
   "buildable_types": "Orbital & FactoryBuild",
   "enable_orbital_shell": true,
   "rolloff_dirs": [
@@ -56,7 +55,6 @@
   },
   "physics": {
     "radius": 20,
-    "push_class": 15,
     "collision_layers": "WL_Orbital",
     "ignore_gravity": true
   },
@@ -81,7 +79,8 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Death/orbital",
-      "effect_scale": 2.5
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+      "effect_scale": 1
     }
   },
   "audio": {
@@ -186,6 +185,9 @@
       ]
     }
   ],
+  "selection_icon": {
+    "diameter": 73
+  },
   "mesh_bounds": [
     45,
     40,

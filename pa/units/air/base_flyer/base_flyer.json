@@ -19,6 +19,12 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
+  "wreckage": {
+    "collision": [
+      "none"
+    ],
+    "remove_ground_cost_stamp": true
+  },
   "navigation": {
     "type": "air",
     "acceleration": 10000,
@@ -32,12 +38,11 @@
     "aggressive_behavior": "line",
     "wobble_factor": 1,
     "wobble_speed": 1,
-    "hover_time": 5
+    "hover_time": -1
   },
   "physics": {
     "radius": 6,
     "gravity_scalar": 1,
-    "push_class": 2,
     "push_sideways": true,
     "allow_pushing": true,
     "air_friction": 1
@@ -69,8 +74,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Air",
-      "effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx",
-      "effect_scale": 0.5
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+      "effect_scale": 1
     }
   },
   "audio": {
@@ -78,15 +83,12 @@
       "move": {
         "cue": "/SE/Movement/air/air_scout_loop",
         "flag": "vel_changed",
-        "should_start_func": "is_moving",
+        "should_start_func": "is_moving_laterally",
         "should_stop_func": "is_not_moving"
       }
     },
     "selection_response": {
       "cue": "/SE/Selection/air/air"
-    },
-    "sing_selection_response": {
-      "cue": "/SE/UI/plus/sing"
     }
   }
 }

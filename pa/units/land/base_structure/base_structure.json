@@ -17,11 +17,45 @@
     "shape": "Box",
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "radius": 1,
-    "push_class": 255,
     "air_friction": 1,
     "allow_pushing": false,
     "push_sideways": false,
     "allow_underground": false
+  },
+  "structure": {
+    "cost_stamp": {
+      "shape": "box",
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "amphibious-large",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "hover-large",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "deepwater",
+          "stamp_type": "structure"
+        },
+        {
+          "move_type": "underwater",
+          "stamp_type": "structure"
+        }
+      ]
+    }
   },
   "recon": {
     "observable": {
@@ -63,9 +97,6 @@
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/structure_small"
-    },
-    "sing_selection_response": {
-      "cue": "/SE/UI/plus/sing"
     }
   },
   "death": {

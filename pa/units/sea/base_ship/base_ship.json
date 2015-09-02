@@ -17,6 +17,12 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
+  "wreckage": {
+    "collision": [
+      "none"
+    ],
+    "remove_ground_cost_stamp": true
+  },
   "navigation": {
     "type": "deepwater",
     "acceleration": 1000,
@@ -27,14 +33,29 @@
     "dodge_multiplier": 1,
     "wobble_factor": 0.1,
     "wobble_speed": 0.2,
-    "park_stamp_type": "box",
-    "park_stamp_cost": 20
+    "park_stamp": {
+      "shape": "box",
+      "cost": 20,
+      "type_data": [
+        {
+          "move_type": "deepwater",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        }
+      ]
+    }
   },
   "physics": {
     "collision_layers": "WaterSurface",
     "shape": "sphere",
     "radius": 6,
-    "push_class": 2,
     "air_friction": 1,
     "sync_radius_to_extents": false
   },
@@ -49,6 +70,10 @@
       "audio_cue": "/SE/Death/Sea",
       "effect_spec": "/pa/effects/specs/default_building_explosion.pfx",
       "effect_scale": 1.5
+    },
+    "teleported": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     }
   },
   "audio": {
@@ -62,9 +87,9 @@
     },
     "selection_response": {
       "cue": "/SE/Selection/sea/sea"
-    },
-    "sing_selection_response": {
-      "cue": "/SE/UI/plus/sing"
     }
+  },
+  "selection_icon": {
+    "vertical_offset": 0
   }
 }
