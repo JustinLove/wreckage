@@ -1,8 +1,8 @@
 {
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Atlas",
-  "description": "!LOC:Seismic Titan- Devastating damage to everything nearby. Amphibious. Attacks land, sea, and undersea targets.",
-  "max_health": 40000,
+  "description": "!LOC:Seismic Titan - Devastating damage to everything nearby. Amphibious. Attacks land, sea, and undersea targets.",
+  "max_health": 60000,
   "build_metal_cost": 30000,
   "atrophy_rate": 200,
   "atrophy_cool_down": 15,
@@ -23,6 +23,7 @@
     }
   },
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
@@ -30,7 +31,8 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_Titan",
     "UNITTYPE_Important",
-    "UNITTYPE_FabOrbBuild"
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Amphibious"
   ],
   "command_caps": [
     "ORDER_Move",
@@ -68,6 +70,10 @@
           "stamp_type": "structure"
         },
         {
+          "move_type": "water-hover",
+          "stamp_type": "structure"
+        },
+        {
           "move_type": "hover-large",
           "stamp_type": "simple"
         },
@@ -81,39 +87,6 @@
         }
       ]
     }
-  },
-  "build_stamp": {
-    "shape": "sphere",
-    "type_data": [
-      {
-        "move_type": "land-small",
-        "stamp_type": "structure"
-      },
-      {
-        "move_type": "amphibious",
-        "stamp_type": "structure"
-      },
-      {
-        "move_type": "amphibious-large",
-        "stamp_type": "structure"
-      },
-      {
-        "move_type": "hover",
-        "stamp_type": "structure"
-      },
-      {
-        "move_type": "hover-large",
-        "stamp_type": "structure"
-      },
-      {
-        "move_type": "deepwater",
-        "stamp_type": "structure"
-      },
-      {
-        "move_type": "underwater",
-        "stamp_type": "structure"
-      }
-    ]
   },
   "physics": {
     "radius": 15,
@@ -202,9 +175,14 @@
     "diameter": 68
   },
   "mesh_bounds": [
-    35,
-    35,
-    35
+    50,
+    40,
+    65
+  ],
+  "wreckage_mesh_bounds": [
+    50,
+    65,
+    40
   ],
   "TEMP_texelinfo": 113.291,
   "wreckage": {

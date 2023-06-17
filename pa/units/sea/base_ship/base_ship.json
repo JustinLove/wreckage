@@ -3,6 +3,12 @@
   "description": "Base Ship Description - If you're seeing this, something is wrong in your ship.",
   "strategic_icon_priority": 3,
   "wreckage_health_frac": 2,
+  "wreckage": {
+    "collision": [
+      "none"
+    ],
+    "remove_ground_cost_stamp": true
+  },
   "spawn_layers": "WL_WaterSurface",
   "armor_type": "AT_Naval",
   "guard_radius": 50,
@@ -17,12 +23,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "wreckage": {
-    "collision": [
-      "none"
-    ],
-    "remove_ground_cost_stamp": true
-  },
   "navigation": {
     "type": "deepwater",
     "acceleration": 1000,
@@ -47,6 +47,10 @@
         },
         {
           "move_type": "hover",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "water-hover",
           "stamp_type": "simple"
         }
       ]

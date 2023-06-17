@@ -1,10 +1,9 @@
 {
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "display_name": "!LOC:Avenger",
-  "description": "!LOC:Orbital Fighter- Fast. Weak. Expendable. Attacks orbital targets.",
+  "display_name": "Avenger",
+  "description": "!LOC:Orbital Fighter - Fast moving orbital fighter for offense and defense.",
   "build_metal_cost": 300,
   "max_health": 50,
-  "gravwell_velocity_multiplier": 6,
   "spawn_layers": "WL_Orbital",
   "attachable": {
     "offsets": {
@@ -16,12 +15,14 @@
     }
   },
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Orbital",
     "UNITTYPE_Fighter",
     "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild"
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Interplanetary"
   ],
   "command_caps": [
     "ORDER_Move",

@@ -1,12 +1,13 @@
 {
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+  "unit_name": "!Orbital Factory",
   "display_name": "!LOC:Orbital Factory",
-  "description": "!LOC:Advanced manufacturing- Builds orbital satellites.",
+  "description": "!LOC:Advanced Manufacturing - Builds orbital satellites and spaceships.",
   "max_health": 9000,
-  "build_metal_cost": 3600,
+  "build_metal_cost": 4200,
   "atrophy_rate": 90,
   "atrophy_cool_down": 15,
-  "buildable_types": "Orbital & FactoryBuild",
+  "buildable_types": "Orbital & FactoryBuild & Custom58",
   "enable_orbital_shell": true,
   "rolloff_dirs": [
     [
@@ -24,6 +25,7 @@
   "wait_to_rolloff_time": 0,
   "factory_cooldown_time": 4,
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",
     "UNITTYPE_Orbital",

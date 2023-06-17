@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Unit updates for 116982 (esp Custom58)
+
 ## 2.0.0
 
 - Based on titans units (mostly affects orbital)

@@ -1,8 +1,8 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "display_name": "Ares",
-  "description": "!LOC:Rolling Fortress- Near invincible. Long-range. Heavy damage. Hover. Attacks land and sea targets.",
-  "max_health": 80000,
+  "description": "!LOC:Rolling Fortress - Near invincible. Long range. Heavy damage. Hover. Attacks land and sea targets.",
+  "max_health": 50000,
   "build_metal_cost": 30000,
   "armor_type": "AT_Hover",
   "atrophy_rate": 200,
@@ -23,6 +23,7 @@
     }
   },
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
@@ -31,7 +32,8 @@
     "UNITTYPE_Titan",
     "UNITTYPE_Hover",
     "UNITTYPE_Important",
-    "UNITTYPE_FabOrbBuild"
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Artillery"
   ],
   "command_caps": [
     "ORDER_Move",
@@ -69,6 +71,10 @@
           "stamp_type": "structure"
         },
         {
+          "move_type": "water-hover",
+          "stamp_type": "structure"
+        },
+        {
           "move_type": "hover-large",
           "stamp_type": "simple"
         },
@@ -85,7 +91,6 @@
   },
   "physics": {
     "radius": 10,
-    "push_class": 70,
     "orient_interp_rate": 90
   },
   "recon": {
@@ -158,14 +163,6 @@
         "socket_rear_muzzle01",
         "socket_rear_muzzle02"
       ]
-    },
-    {
-      "spec_id": "/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_stomp.json",
-      "record_index": -1,
-      "fire_event": "fired",
-      "projectiles_per_fire": 1,
-      "aim_bone": "bone_root",
-      "muzzle_bone": "bone_root"
     }
   ],
   "teleportable": null,
@@ -404,7 +401,12 @@
   "mesh_bounds": [
     40,
     40,
-    25
+    22
+  ],
+  "wreckage_mesh_bounds": [
+    40,
+    40,
+    17
   ],
   "TEMP_texelinfo": 31,
   "wreckage": {

@@ -128,8 +128,12 @@ module.exports = function(grunt) {
     }
   })
 
+  grunt.registerTask('printPath', function() {
+    console.log(media)
+  });
+
   // Default task(s).
-  grunt.registerTask('default', ['proc', 'json_schema', 'jsonlint', 'copy:mod']);
+  grunt.registerTask('default', ['proc', 'json_schema', 'jsonlint', 'copy:mod', 'printPath']);
 
 };
 

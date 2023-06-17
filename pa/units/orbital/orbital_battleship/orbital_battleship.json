@@ -1,10 +1,9 @@
 {
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "display_name": "!LOC:Omega",
-  "description": "!LOC:Orbital Battleship- Rapid-Fire. Very durable. Heavy damage. Attacks everything.",
+  "display_name": "Omega",
+  "description": "!LOC:Orbital Battleship - Rapid-Fire. Very durable. Heavy damage. Attacks everything.",
   "build_metal_cost": 14000,
   "max_health": 4000,
-  "gravwell_velocity_multiplier": 6,
   "spawn_layers": "WL_Orbital",
   "attachable": {
     "offsets": {
@@ -16,13 +15,15 @@
     }
   },
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Orbital",
     "UNITTYPE_Fighter",
     "UNITTYPE_Heavy",
     "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild"
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Interplanetary"
   ],
   "command_caps": [
     "ORDER_Move",
@@ -44,7 +45,6 @@
   },
   "physics": {
     "radius": 5,
-    "push_class": 15,
     "gravity_scalar": 0.001
   },
   "recon": {
@@ -58,6 +58,12 @@
         },
         {
           "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 200
+        },
+        {
+          "layer": "underwater",
           "channel": "sight",
           "shape": "capsule",
           "radius": 200
